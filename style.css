@@ -1,44 +1,50 @@
-body {
-    background-color: hsl(212, 45%, 89%);
-}
-
-h3 {
-    font-weight: 700;
-}
-
-p {
-    font-size: 15px;
-    font-family: outfit, sans-serif;
-    font-weight: 400;
-}
-
-.parent {
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Outfit', sans-serif; 
+    background-color: hsl(212,45%,80%);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200vh;
-}
-.box {
-    width: 50%;
-    max-width: 1440px;
-    height: auto;
-    border: 1px solid white;
-    background-color: white;
+  }
+  
+  .container {
+    text-align: center;
+    background-color: white: hsl(0, 0%, 0%);
+    border-radius: 20px;
     padding: 20px;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: outfit, sans-serif;
-    border-radius: 10px;
-}
-.responsive-image {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-@media (max-width: 600px) {
-    .box {
-        width: 80%;
+    width: fit-content;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 300px; 
+  }
+  
+  .qr-code {
+    max-width: 100%;
+    border-radius: 10px; 
+  }
+  
+  h1 {
+    margin: 20px 0;
+    color: hsl(218, 44%, 22%);
+    font-size: 22px; 
+    font-weight: 700;
+  }
+  
+  p {
+    color: hsl(220, 15%, 55%);
+    font-size: 15px; 
+    font-weight: 400;
+  }
+
+@media (min-width: 375px) {
+    .responsive-box {
+        width: 360px;
+        height: 260px;
     }
 }
